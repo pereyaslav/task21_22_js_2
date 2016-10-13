@@ -1,0 +1,63 @@
+.body {
+  background-color: #ccc;
+}
+.wrapper {
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 30px auto;
+  position: relative;
+}
+.caption {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+label {
+  display: block;
+}
+.box {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.box form {
+  background-color: #fff;
+}
+.divButton,
+.divModal {
+  text-align: center;
+}
+.divButton input[type='button'] {
+  font-size: 16px;
+  padding: 10px;
+}
+.divModal {
+  position: absolute;
+  width: 300px;
+  top: 50px;
+  left: 0;
+  background-color: #C0C5D4;
+  z-index: 100;
+  display: none;
+}
+.message {
+  margin: 10px;
+  padding-top: 5px;
+  border: 2px solid #E8EFF5;
+  height: 100px;
+}
+.p1, .p2{
+font-size: 18px;
+/*  padding: 10px;	*/
+}
+.divModal input[type='button'] {
+  font-size: 14px;
+  padding: 5px 10px;
+}

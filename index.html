@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+	</script>
+	
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/dist/scripttest.js"></script>
+</head>
+
+<body class="body">
+	<script type="text/html" id="test-program">
+		<ol class="ol">
+			<% for (key in data) { %>
+				<li>
+					<%= data[key][0]%>
+						<form class="<%= key%>">
+							<% for (var i=1; i<data[key].length; i++) { %>
+								<label>
+									<input type="radio" name="groupradio" value="val<%= i%>">
+									<%= data[key][i].v%>
+								</label>
+								<% } %>
+						</form>
+				</li>
+				<% } %>
+		</ol>
+	</script>
+	<script type="text/javascript" src="js/dist/scriptdom.js"></script>
+</body>
+
+</html>
